@@ -4,6 +4,10 @@
 
 Strassen's Algorithm implementation in C++, simulation for NxN cases where N = { 10, ..., 100 } and its asymptotic comparison with the naive matrix multiplication algorithm.
 
+**How to run**
+
+No extra dependencies or libraries. Was written in pure C++ and basic STL (vectors). Link the files in a project and simply run. If you want to omit the simulation, comment out the later part of code in the Test.cpp.
+
 **Strassen's Algorithm**
 
 Strassen's Algorithm is a divide and conquer algorithm that divides input matrices of N = 2^n (dimensions of input must be a power of 2) into four N/2 submatrices, performs simpler multiplications, and finally combines the results into the result matrix. 

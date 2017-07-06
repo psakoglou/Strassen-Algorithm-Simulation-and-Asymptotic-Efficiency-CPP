@@ -5,7 +5,7 @@
 *  =====================================================================================
 *
 *	Asymptotic Comparison of Strassen's Algorithm to the naive algorithm  
-	for matrix multiplication
+*	for matrix multiplication
 *
 */
 

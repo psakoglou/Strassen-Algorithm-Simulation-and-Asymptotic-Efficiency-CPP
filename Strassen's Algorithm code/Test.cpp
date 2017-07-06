@@ -112,11 +112,11 @@ int main() {
 
 			}
 
-			// Store the simulation's average time
-			strassen_times[x][y] = sum1 / NSim;
+			// Store the simulation's overall time
+			strassen_times[x][y] = sum1;
 
-			// Store the simulation's average time
-			classic_mult_times[x][y] = sum2 / NSim;
+			// Store the simulation's overall time
+			classic_mult_times[x][y] = sum2;
 
 			sum1 = 0;
 			sum2 = 0;
@@ -129,7 +129,7 @@ int main() {
 
 	// Print running times:
 
-	// Print Strassen's Average Running Times
+	// Print Strassen's Overall Running Times
 	std::cout << "\n\nStrassen's Algorithm running times for N = 10, ... , 100 :\n\n";
 	std::cout << "10k\t20k\t30k\t40k\t50k\t60k\t70k\t80k\t90k\t100k\n\n";
 	std::cout.precision(5);
@@ -139,7 +139,7 @@ int main() {
 		}
 	}
 
-	// Print Classic Method's Average Running Times
+	// Print Classic Method's Overall Running Times
 	std::cout << "\n\n\n";
 	std::cout << "Classic Multiplication running times for N = 10, ... , 100 :\n\n";
 	std::cout << "10k\t20k\t30k\t40k\t50k\t60k\t70k\t80k\t90k\t100k\n\n";

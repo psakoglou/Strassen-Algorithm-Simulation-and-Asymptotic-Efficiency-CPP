@@ -8,7 +8,7 @@ Strassen's Algorithm implementation in C++, simulation for NxN cases where N = {
 
 Strassen's Algorithm is a divide and conquer algorithm that divides input matrices of N = 2^n (dimensions of input must be a power of 2) into four N/2 submatrices, performs simpler multiplications, and finally combines the results into the result matrix. 
 
-It is proven that Strassen's Algorithm runs in O(n^2.8) which asymptotically beats the naive multiplication, which is of O(n^3), by powers of 10.
+It is proven that Strassen's Algorithm runs in O(n^2.8) which asymptotically beats the naive multiplication, which is of O(n^3), by powers of 10 as N -> inf.
 
 **Naive Algorithm**
 

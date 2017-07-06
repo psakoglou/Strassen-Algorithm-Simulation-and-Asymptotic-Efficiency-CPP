@@ -18,8 +18,8 @@ Iterates to all rows and columns for each element of the result matrix, simply m
 
 Assymptotically the Strassen's Algorithm running time is:
 
-![Alt text](/relative/path/to/strassen_asymptotic.png?raw=true "Optional Title")
+![Alt text](img/strassen_asymptotic.png?raw=true "Optional Title")
 
 Assymptotically the Naive Algorithm's running time is:
 
-![Alt text](/relative/path/to/naive_asymptotic.png?raw=true "Optional Title")
+![Alt text](img/naive_asymptotic.png?raw=true "Optional Title")

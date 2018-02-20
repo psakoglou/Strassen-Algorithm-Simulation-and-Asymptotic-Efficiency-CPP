@@ -1,5 +1,5 @@
 /*
-*	© Superharmonic Technologies
+*	Â© Superharmonic Technologies
 *	Pavlos Sakoglou
 *
 *  =============================================================================
@@ -30,15 +30,15 @@ Matrix sq_matrix_multiply(Matrix A, Matrix B, size N) {
 
 	Matrix C = createMatrix(N);
 
-	type sum = 0;												// O(1)
+	type sum = 0;									// O(1)
 
 	for (unsigned int i = 0; i < N; i++) {						// O(n^3)
 		for (unsigned int j = 0; j < N; j++) {
 			for (size k = 0; k < N; k++) {
-				sum += A[i][k] * B[k][j];						// O(1)
+				sum += A[i][k] * B[k][j];				// O(1)
 			}
-			C[i][j] = sum;										// O(1)
-			sum = 0;											// O(1)
+			C[i][j] = sum;							// O(1)
+			sum = 0;							// O(1)
 		}
 	}
 	return C;
@@ -105,9 +105,9 @@ Matrix strassen(Matrix A, Matrix B, size N) {
 	Matrix P7 = strassen(S9, S10, K);
 
 	// C_i	
-	Matrix C11 = subtract(add(add(P5, P4, K), P6, K), P2, K);					// P5 + P4 - P2 + P6
-	Matrix C12 = add(P1, P2, K);												// P1 + P2
-	Matrix C21 = add(P3, P4, K);												// P3 + P4
+	Matrix C11 = subtract(add(add(P5, P4, K), P6, K), P2, K);				// P5 + P4 - P2 + P6
+	Matrix C12 = add(P1, P2, K);								// P1 + P2
+	Matrix C21 = add(P3, P4, K);								// P3 + P4
 	Matrix C22 = subtract(subtract(add(P5, P1, K), P3, K), P7, K);				// P1 + P5 - P3 - P7
 
 																				// C
@@ -127,7 +127,6 @@ Matrix strassen(Matrix A, Matrix B, size N) {
 	// Return the result
 	return C;
 }
-
 
 
 #endif // !STRASSEN_HPP
